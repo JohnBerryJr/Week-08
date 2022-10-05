@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title></title>
+    </head>
 
-<body>
-<!-- Navigation -->
-    <header>
-        <button class="buttonStyle"><a href="/index.html">Home Page</a></button>
-        <button class="buttonStyle"><a href="/secondPage.html">Second Page</a></button>
-    </header>
+    <body>
+        <!-- Navigation -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="/secondPage.html">Second Page</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<!-- Image -->
-    <section>
-        <img src="https://picsum.photos/700/300" alt="Random Image">
-    </section>
+        <!-- Image -->
+        <section>
+            <img src="https://picsum.photos/700/300" alt="Random Image" />
+        </section>
 
+        <!-- Form -->
+        <section>
+            <form action="/action.php" method="post">
+                First Name: <input name="name" type="text" /> <br />
+                Last Name: <input name="name" type="text" /> <br />
+                Age:
+                <input
+                    max="99"
+                    min="1"
+                    name="age"
+                    step="1"
+                    type="number"
+                    value="18"
+                />
+                <br />
+                <select name="gender">
+                    <option selected="selected" value="male">Male</option>
+                    <option value="female">Female</option></select
+                ><br />
+                <input
+                    checked="checked"
+                    name="newsletter"
+                    type="radio"
+                    value="daily"
+                />
+                Daily
+                <input name="newsletter" type="radio" value="weekly" />
+                Weekly<br />
+                <textarea cols="20" name="comments" rows="5">Comment</textarea
+                ><br />
+                <label
+                    ><input name="terms" type="checkbox" value="tandc" />Accept
+                    terms</label
+                >
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
 
-<!-- Form -->
-    <section>
-        <form action="/action.php" method="post">
-            First Name: <input name="name" type="text" /> <br /> 
-            Last Name: <input name="name" type="text" /> <br /> 
-            Age: <input max="99" min="1" name="age" step="1" type="number" value="18" /> <br />
-            <select name="gender">
-            <option selected="selected" value="male">Male</option>
-            <option value="female">Female</option>
-            </select><br /> 
-            <input checked="checked" name="newsletter" type="radio" value="daily" /> Daily <input name="newsletter" type="radio" value="weekly" /> Weekly<br />
-            <textarea cols="20" name="comments" rows="5">Comment</textarea><br />
-            <label><input name="terms" type="checkbox" value="tandc" />Accept terms</label> <br />
-            <input type="submit" value="Submit" />
-        </form>
-    </section>
-
-<!-- Footer -->
-    <footer>
-        <button class="buttonStyle"><a href="/index.html">Home Page</a></button>
-        <button class="buttonStyle"><a href="/secondPage.html">Second Page</a></button>
-    </footer>
-
-</body>
+        <!-- Footer -->
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="/secondPage.html">Second Page</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
 </html>
