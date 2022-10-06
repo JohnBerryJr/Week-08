@@ -7,18 +7,20 @@
 }
 
 body {
-    background-color: rgb(156, 206, 255);
     font-family: "Montserrat", sans-serif;
 }
 
 img {
-    flex-direction: column;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #heading {
-    color: white;
+    color: black;
     font-weight: bold;
-    margin: 30px 40px 30px 40px;
+    margin: auto;
+    text-align: center;
 }
 
 .buttonStyle {
@@ -30,10 +32,8 @@ img {
 
 header nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(0, 0, 130);
 }
 
 header nav li {
@@ -51,3 +51,47 @@ header nav li a {
 header nav li a:hover {
     background-color: rgb(30, 28, 50);
 }
+
+
+footer nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(0, 0, 130);
+    width: 100%;
+}
+
+footer nav li {
+    float: left;
+}
+
+footer nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer nav li a:hover {
+    background-color: rgb(30, 28, 50);
+}
+
+tr {
+
+}
+
+table {
+    margin: auto;
+    border-spacing: 20px;
+    border-collapse: collapse;
+    width: 65%;
+    text-align: center;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
